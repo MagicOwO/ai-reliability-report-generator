@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  report-generator:
+    build: .
+    volumes:
+      - ./reports:/app/reports  # Mount reports directory to persist generated reports
+      - ./config:/app/config    # Mount config directory to easily modify configurations
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    # Optional: Override the command to specify different config file or parameters
+    # command: python -m src.report_generator --config /app/config/custom_config.yaml 

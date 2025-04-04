@@ -1,0 +1,35 @@
+target_company:
+  name: "New Relic"
+  status_url: "https://status.newrelic.com/history"
+
+peer_companies:
+  - name: "MongoDB"
+    status_url: "https://status.mongodb.com/history"
+  - name: "Snowflake"
+    status_url: "https://status.snowflake.com/history"
+  - name: "SignalFx"
+    status_url: "https://status.us0.signalfx.com/history"
+  - name: "Confluent"
+    status_url: "https://status.confluent.cloud/history"
+  - name: "DigitalOcean"
+    status_url: "https://status.digitalocean.com/history"
+
+timeframe:
+  start_date: "2024-01-01"
+  end_date: "2024-03-15"
+
+# Scraping settings
+scraping:
+  max_retries: 3
+  retry_delay: 1
+  timeout: 30
+
+# Analysis settings
+analysis:
+  min_incidents_for_key_issue: 2
+  similarity_threshold: 0.5
+
+# Output settings
+output:
+  report_directory: "reports"
+  excel_filename_template: "{company}_reliability_report.xlsx" 

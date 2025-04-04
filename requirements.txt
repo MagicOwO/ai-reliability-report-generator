@@ -1,0 +1,11 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+openpyxl==3.1.2
+python-dateutil==2.8.2
+playwright==1.51.0
+pandas==2.2.3
+numpy==2.2.4
+aiohttp==3.11.16
+asyncio==3.4.3
+pyyaml==6.0.1
+openai==1.70.0
