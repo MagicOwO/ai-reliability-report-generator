@@ -1,6 +1,6 @@
 # AI Reliability Report Generator
 
-This project is an automated tool for analyzing service status pages of enterprise SaaS companies, generating reliability reports and peer comparisons.
+This project is an automated tool for analyzing service status pages of enterprise SaaS companies, generating reliability reports and peer comparisons by GenAI.
 
 ## Features
 
